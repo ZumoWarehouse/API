@@ -6,8 +6,7 @@ var options = {
 
 var mobileApp = require('azure-mobile-apps')(options);
 
-mobileApp.tables.add('Box');
-mobileApp.tables.add('Item');
+mobileApp.tables.import('./tables');
 
 app.use(mobileApp);
 app.listen(process.env.PORT || 3000);
