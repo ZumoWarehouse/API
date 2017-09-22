@@ -5,6 +5,16 @@ var table = azureMobileApps.table();
 
 table.access = 'authenticated';
 
+// Define the columns within the table
+table.columns = {
+    "title": "string",
+    "userId": "string",
+    "boxId": "string"
+};
+
+// Turn off dynamic schema
+table.dynamicSchema = false;
+
 table.read(tableHelpers.limitToUserId);
 table.update(tableHelpers.limitToUserId);
 table.delete(tableHelpers.limitToUserId);

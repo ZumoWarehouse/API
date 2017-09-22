@@ -10,5 +10,11 @@ mobileApp.tables.import('./tables');
 
 mobileApp.api.import('./api');
 
-app.use(mobileApp);
-app.listen(process.env.PORT || 3000);
+// Provide initialization of any tables that are statically defined
+mobileApp.tables.initialize().then(function () {
+    // Add the mobile API so it is accessible as a Web API
+    app.use(mobileApp);
+
+    // Start listening on HTTP
+    app.listen(process.env.PORT || 3000);
+});
