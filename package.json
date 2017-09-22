@@ -4,8 +4,7 @@
   "version": "0.1.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://boyko-ant@github.com/ZumoWarehouse/API.git"
@@ -17,11 +16,11 @@
   },
   "homepage": "https://github.com/ZumoWarehouse/API#readme",
   "dependencies": {
-    "azure-mobile-apps": "^3.0.2",
-    "express": "^4.14.0",
-    "swagger-ui": "^2.2.6"
+    "azure-mobile-apps": "^4.0.1",
+    "express": "^4.15.4",
+    "swagger-ui": "^2.2.10"
   },
   "devDependencies": {
-    "sqlite3": "^3.1.8"
+    "sqlite3": "^3.1.12"
   }
 }
