@@ -1,6 +1,8 @@
 {
   "name": "zumo-warehouse-api",
-  "engine": "node >= 6.9.1",
+  "engines": { 
+    "node" : ">=6.9.1 <8.5.0"
+  },
   "version": "0.1.0",
   "description": "",
   "main": "server.js",
