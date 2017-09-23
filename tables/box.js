@@ -10,7 +10,6 @@ table.columns = {
     "number": "number",
     "rackNumber": "number",
     "shelfNumber": "number",
-    "isFull": "boolean",
     "userId": "string"
 };
 
