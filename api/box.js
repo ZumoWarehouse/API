@@ -22,6 +22,7 @@ api.get = function(request, response, next) {
         });
 };
 
-api.access = 'authenticated';
+api.access = 'anonymous';
+// api.access = 'authenticated';
 
 module.exports = api;
