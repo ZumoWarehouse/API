@@ -3,7 +3,8 @@ var tableHelpers = require('./../_helpers/table');
 
 var table = azureMobileApps.table();
 
-table.access = 'authenticated';
+table.access = 'anonymous';
+// table.access = 'authenticated';
 
 // Define the columns within the table
 table.columns = {
